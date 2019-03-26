@@ -27,7 +27,7 @@ namespace YounglingsDemo
                 var placemarks = await Geocoding.GetPlacemarksAsync(lat, lon);
                 var placemark = placemarks?.FirstOrDefault();
 
-                //Lindani's suggestion
+                //Lindani's suggestion. And is a great way 
                 devicelocation = location != null && placemark != null ?
                         devicelocation = placemark.SubLocality + ", " + placemark.Thoroughfare : placemark.SubLocality == null ?
                         devicelocation = placemark.Locality : null;
